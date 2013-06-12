@@ -15,5 +15,19 @@
               </args>
            </routeurfrontend>
        </routers>
+		<layout>
+		   <updates>
+				<test>
+					 <file>test.xml</file>
+				 </test>
+			</updates>
+		</layout>
     </frontend>
+	<global>
+		 <blocks>
+			 <test>
+				  <class>Pfay_Test_Block</class>
+			 </test>
+		  </blocks>
+	</global>
 </config>

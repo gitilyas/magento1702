@@ -105,3 +105,7 @@ skin/frontend/default/modern/
 skin/frontend/enterprise
 skin/install/
 var/
+# Eclipse files to ignore
+.buildpath
+.project
+.settings/
