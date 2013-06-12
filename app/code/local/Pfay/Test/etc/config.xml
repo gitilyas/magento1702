@@ -24,10 +24,40 @@
 		</layout>
     </frontend>
 	<global>
-		 <blocks>
-			 <test>
-				  <class>Pfay_Test_Block</class>
-			 </test>
-		  </blocks>
+		<blocks>
+			<test>
+				<class>Pfay_Test_Block</class>
+			</test>
+		</blocks>
+		<models>
+		 <test>
+			 <class>Pfay_Test_Model</class>
+			 <resourceModel>test_mysql4</resourceModel>
+		 </test>
+		 <test_mysql4>
+			 <class>Pfay_Test_Model_Mysql4</class>
+			 <entities>
+				 <contact>
+				   <table>pfay_test_contacts</table>
+				 </contact>
+			  </entities>
+		 </test_mysql4>
+		</models>
+			<!-- permet au module de lire et ecrire -->
+		<resources>
+				<!-- connection pour ecrire -->
+				<test_write>
+					<connection>
+						<use>core_write</use>
+					</connection>
+				</test_write>
+				<!-- connection pour lire-->
+				<test_read>
+					<connection>
+						<use>core_read</use>
+					</connection>
+				</test_read>
+		</resources>
+		 <!-- -/- -->
 	</global>
 </config>
