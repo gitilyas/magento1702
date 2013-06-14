@@ -1,9 +1,9 @@
 <?php
 /**
- * exemple d'un block pour le module Pfay_Test
+ * Block for Pfay_Test module (backend)
  */
 
-class Pfay_Test_Block_Monblock extends Mage_Core_Block_Template
+class Pfay_Test_Block_Adminhtml_Monblock extends Mage_Core_Block_Template
 {
 	/**
 	 * Return the ceated contact ID
@@ -59,7 +59,7 @@ class Pfay_Test_Block_Monblock extends Mage_Core_Block_Template
                      .' '.$data->getData('telephone').'<br />';
          }
          //je renvoi un message de succes a l'utilisateur (juste pour que vous sachiez utiliser la fonction)
-         Mage::getSingleton('core/session')->addSuccess(' Ca marche !?!');
+         Mage::getSingleton('adminhtml/session')->addSuccess(' Ca marche !!!!!!');
          return $retour;
       }
 }

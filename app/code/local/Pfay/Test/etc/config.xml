@@ -22,7 +22,40 @@
 				 </test>
 			</updates>
 		</layout>
-    </frontend>
+    </frontend>    
+	<admin>
+		 <routers>
+			 <test>
+				<use>admin</use>
+				<args>
+				   <module>Pfay_Test</module>
+				   <frontName>admintest</frontName>
+				</args>
+			 </test>
+		  </routers>
+	 </admin>
+	 <adminhtml>
+	   <layout>
+		  <updates>
+			  <test>
+				  <file>test.xml</file>
+			  </test>
+		  </updates>
+	   </layout>
+	   <menu>
+		  <test translate="title" module="adminhtml">
+			 <title>Mes modules</title>
+			 <sort_order>100</sort_order>
+			 <children>
+				 <set_time>
+					   <title>Carnet d'adresse</title>
+					   <action>admintest/adminhtml_index</action>
+				  </set_time>
+			  </children>
+		   </test>
+		</menu>
+	</adminhtml>
+	
 	<global>
 		<blocks>
 			<test>

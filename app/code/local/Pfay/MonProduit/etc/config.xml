@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+ <modules>
+    <Pfay_MonProduit>
+        <version>1.0.0</version>
+    </Pfay_MonProduit>
+ </modules>
+<global>
+   <blocks>
+<!--
+	<monproduit>
+		<class>Pfay_MonProduit_Block</class>
+	</monproduit>
+-->
+    <catalog>
+         <rewrite>
+              <product_view>Pfay_MonProduit_Block_Product_View</product_view>
+         </rewrite>
+    </catalog>
+  </blocks>
+  <models>
+	  <customer>
+		<rewrite>
+		  <customer>Pfay_MonProduit_Model_Customer</customer>
+		</rewrite>
+	  </customer>
+  </models>
+ </global>
+</config>
