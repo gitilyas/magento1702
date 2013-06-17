@@ -7,6 +7,16 @@
      </modules>
      <frontend>
        <routers>
+<!--
+For overriding the Checkout_Cart controller (ça marche c'est une autre methode de surcharge)
+		 <checkout>
+			 <args>
+			   <modules>
+				 <Pfay_Test_Checkout before="Mage_Checkout">Pfay_Test_Checkout</Pfay_Test_Checkout>
+			   </modules>
+			 </args>
+		 </checkout>
+-->
           <routeurfrontend>
               <use>standard</use>
               <args>
@@ -62,6 +72,11 @@
 				<class>Pfay_Test_Block</class>
 			</test>
 		</blocks>
+		<helpers>
+		   <test>
+				  <class>Pfay_Test_Helper</class>
+			</test>
+		</helpers>
 		<models>
 		 <test>
 			 <class>Pfay_Test_Model</class>
@@ -76,7 +91,24 @@
 			  </entities>
 		 </test_mysql4>
 		</models>
-			<!-- permet au module de lire et ecrire -->
+<!-- Déclaration de l'observer "Pfay_Test_Model_Observer" du Event : cms_page_prepare_save-->
+<!-- L'observer affiche la page CMS enregistré dans le Backend-->
+
+<!--
+		<events>
+		   <cms_page_prepare_save>
+			<observers>
+			   <Pfay_Test_Model_Observer>
+				   <type>singleton</type>
+				   <class>test/observer</class>
+				   <method>saveCmsPageObserve</method>
+				   </Pfay_Test_Model_Observer>
+			   </observers>
+		  </cms_page_prepare_save>
+		</events>
+-->
+
+		<!-- permet au module de lire et ecrire -->
 		<resources>
 				<!-- connection pour ecrire -->
 				<test_write>

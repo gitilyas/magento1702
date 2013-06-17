@@ -5,7 +5,6 @@
             <version>0.1.0</version>
         </Mage_Sintax>
     </modules>
-    
     <global>
         <models>
             <sintax>
@@ -26,8 +25,39 @@
                 <class>Mage_Sintax_Helper</class>
             </sintax>  
         </helpers>
+        <!-- Surcharge d'un controlleur accessible-->
+        <rewrite>
+            <mage_sintax_customer_account>
+                <from><![CDATA[#^/customer/account/#]]></from> <!-- traduit par http://www.mymagentostore.com/customer/account/ -->
+                <to>/sintax/customer_account/</to> <!-- traduit par /Mynamespace/Mymodule/controllers/Customer/AccountController.php -->
+            </mage_sintax_customer_account>
+        </rewrite>
+        <!-- Surcharge d'un controlleur d'arriere plan-->
+        <routers>
+            <cms>
+                <rewrite>
+                    <page>
+						<to>/sintax/cms_page</to>
+						<override_action>true</override_action>
+						<actions>
+								<view><to>sintax/cms_page/view</to></view>
+						</actions>
+                    </page>
+                </rewrite>
+            </cms>
+        </routers>
     </global>
-    
+    <frontend>
+        <routers>
+            <Mage_Sintax>
+                <use>standard</use>
+                <args>
+                    <module>Mage_Sintax</module>
+                    <frontName>sintax</frontName>
+                </args>
+            </Mage_Sintax>
+        </routers>
+    </frontend>
     <admin>
         <routers>
             <sintax>
@@ -38,8 +68,7 @@
                 </args>
             </sintax>
         </routers>
-    </admin>
-    
+    </admin>    
     <adminhtml>
         <translate>
             <modules>

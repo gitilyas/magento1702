@@ -9,5 +9,9 @@
             <active>true</active>
             <codePool>local</codePool>
          </Pfay_MonProduit>
+		 <Pfay_Ecard>
+            <active>true</active>
+            <codePool>local</codePool>
+         </Pfay_Ecard>
        </modules>
     </config>
