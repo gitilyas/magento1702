@@ -37,7 +37,7 @@ class Pfay_Test_IndexController extends Mage_Core_Controller_Front_Action
 	public function saveContactAction()
 	{
 		$this->saveContact();
-		$this->_redirect('test/index/index');
+		$this->_redirect('*/index/index');
 	}
 	
 	/**

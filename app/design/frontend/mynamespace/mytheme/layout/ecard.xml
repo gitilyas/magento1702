@@ -1,0 +1,11 @@
+<layout version="0.1.0">
+     <default>
+          <reference name="content">
+          </reference>
+      </default>
+      <routecard_index_index>
+           <reference name="content">
+                <block type="ecard/ecard"  name="afficher_ecard" template="ecard/ecard.phtml" />
+           </reference>
+      </routecard_index_index>
+</layout>

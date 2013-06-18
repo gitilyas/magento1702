@@ -59,7 +59,7 @@ class Pfay_Test_Block_Monblock extends Mage_Core_Block_Template
                      .' '.$data->getData('telephone').'<br />';
          }
          //je renvoi un message de succes a l'utilisateur (juste pour que vous sachiez utiliser la fonction)
-         Mage::getSingleton('core/session')->addSuccess(' Ca marche !?!');
+         Mage::getSingleton('core/session')->addSuccess(' Ca marche !?__!');
          return $retour;
       }
       

@@ -1,5 +1,11 @@
 <?xml version="1.0" ?>
 <config>
+    <tabs>
+        <ecard_tab translate="label">
+            <label>Cartes</label>
+            <sort_order>100</sort_order>
+        </ecard_tab>
+    </tabs>
     <sections>
         <ecard_section translate="label">
             <label>Cartes</label>
