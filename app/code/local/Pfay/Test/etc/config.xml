@@ -25,6 +25,15 @@ For overriding the Checkout_Cart controller (ça marche c'est une autre methode 
               </args>
            </routeurfrontend>
        </routers>
+		<translate>
+		  <modules>
+			<Pfay_Test>
+				<files>
+					<default>Pfay_Test.csv</default>
+				</files>
+			</Pfay_Test>
+		  </modules>
+		</translate>
 		<layout>
 		   <updates>
 				<test>
