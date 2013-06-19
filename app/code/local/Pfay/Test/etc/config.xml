@@ -122,6 +122,15 @@ For overriding the Checkout_Cart controller (ça marche c'est une autre methode 
 						<use>core_read</use>
 					</connection>
 				</test_read>
+				<test_setup>
+					<setup>
+						<module>Pfay_Test</module>
+						<class>Mage_Catalog_Model_Resource_Eav_Mysql4_Setup</class>
+					</setup>
+					<connection>
+						<use>core_setup</use>
+					</connection>
+				</test_setup>
 		</resources>
 		 <!-- -/- -->
 	</global>
