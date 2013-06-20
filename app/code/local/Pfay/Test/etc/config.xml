@@ -2,7 +2,7 @@
   <config>
      <modules>
         <Pfay_Test>
-          <version>1.0.0</version>
+          <version>1.0.2</version>
         </Pfay_Test>
      </modules>
      <frontend>
@@ -97,6 +97,11 @@ For overriding the Checkout_Cart controller (ça marche c'est une autre methode 
 				 <contact>
 				   <table>pfay_test_contacts</table>
 				 </contact>
+<!--
+				 <listing_ville>
+				   <table>listing_ville</table>
+				 </listing_ville>
+-->
 			  </entities>
 		 </test_mysql4>
 		</models>
