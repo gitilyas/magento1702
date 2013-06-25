@@ -39,7 +39,7 @@ $installer->addAttribute($entityType, 'taillemanche',array('
 		label'		=> 'Taille du manche', //le label
 		'type'		=> 'int',    //backend_type
 		'input'		=> 'select', //frontend_input
-		'source'	=> 'pfay_test/attribute_source_taillemanche',    //ici on définit les options du select (voir la suite)
+		'source'	=> 'test/attribute_source_taillemanche',  // "test/attribute" et pas "pfay_test/attribute..."  //ici on définit les options du select (voir la suite)
 		'required'	=> true, //le champs est requis
 		'visible'	=> true, //le champs est visible
 		'default'	=> '0', //la valeur par default est 0

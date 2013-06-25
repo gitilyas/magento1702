@@ -25,6 +25,14 @@ class Pfay_Test_Adminhtml_IndexController extends Mage_Adminhtml_Controller_Acti
 		{
 			Mage::register('test_data', $testModel);
 			$this->loadLayout();
+			
+			// Activer tinyMce dans le header pour la page "edit"
+			if (Mage::getSingleton('cms/wysiwyg_config')->isEnabled()) {
+				Mage::log("Enable");
+				Mage::log($this->getLayout()->getBlock('head'));
+				$this->getLayout()->getBlock('head')->setCanLoadTinyMce(true);
+			}
+			
 			$this->_setActiveMenu('test/set_time');
 			$this->_addBreadcrumb('test Manager', 'test Manager');
 			$this->_addBreadcrumb('Test Description', 'Test Description');
