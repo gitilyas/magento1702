@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Excellence_Ajaxaddto>
+            <version>0.1.0</version>
+        </Excellence_Ajaxaddto>
+    </modules>
+    <global>
+
+    </global>
+    <frontend>
+        <routers>
+            <Excellence_Ajaxaddto>
+                <use>standard</use>
+                <args>
+                    <module>Excellence_Ajaxaddto</module>
+                    <frontName>ajaxaddto</frontName>
+                </args>
+            </Excellence_Ajaxaddto>
+        </routers>
+        <layout>
+            <updates>
+                <ajax>
+                    <file>excellence_ajaxaddto.xml</file>
+                </ajax>
+            </updates>
+        </layout>
+    </frontend>
+</config>
