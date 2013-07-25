@@ -28,10 +28,10 @@
 <config>
     <global>
         <install>
-            <date><![CDATA[Thu, 06 Jun 2013 10:23:16 +0000]]></date>
+            <date><![CDATA[Thu, 25 Jul 2013 12:37:37 +0000]]></date>
         </install>
         <crypt>
-            <key><![CDATA[a7328acc1eb00af9879d35ff86f7bb55]]></key>
+            <key><![CDATA[dee3af9d11f16f2b21689bcd97d71a15]]></key>
         </crypt>
         <disable_local_modules>false</disable_local_modules>
         <resources>
@@ -40,10 +40,10 @@
             </db>
             <default_setup>
                 <connection>
-                    <host><![CDATA[magento1702.local]]></host>
+                    <host><![CDATA[localhost]]></host>
                     <username><![CDATA[root]]></username>
-                    <password><![CDATA[zhmd9xNL]]></password>
-                    <dbname><![CDATA[magento_1.7.0.2]]></dbname>
+                    <password><![CDATA[smiledb]]></password>
+                    <dbname><![CDATA[magento1702]]></dbname>
                     <initStatements><![CDATA[SET NAMES utf8]]></initStatements>
                     <model><![CDATA[mysql4]]></model>
                     <type><![CDATA[pdo_mysql]]></type>
