@@ -42,8 +42,8 @@
                 <connection>
                     <host><![CDATA[magento1702.local]]></host>
                     <username><![CDATA[root]]></username>
-                    <password><![CDATA[zhmd9xNL]]></password>
-                    <dbname><![CDATA[magento_1.7.0.2]]></dbname>
+                    <password><![CDATA[smiledb]]></password>
+                    <dbname><![CDATA[magento1702]]></dbname>
                     <initStatements><![CDATA[SET NAMES utf8]]></initStatements>
                     <model><![CDATA[mysql4]]></model>
                     <type><![CDATA[pdo_mysql]]></type>
